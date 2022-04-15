@@ -1,0 +1,24 @@
+{
+  "name": "discord-action-embed",
+  "version": "1.0.0",
+  "description": "Send a message to a Discord webhook.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rguillaume/discord-action-embed.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rguillaume/discord-action-embed/issues"
+  },
+  "homepage": "https://github.com/rguillaume/discord-action-embed#readme",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "axios": "^0.26.1"
+  }
+}
