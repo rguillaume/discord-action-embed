@@ -1,0 +1,21 @@
+name: GitHub - Discord
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - ready_for_review
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          path: ./
+      - name: Discord PR
+        uses: ./
+        with:
+          webhook:  ""${{ secrets.DISCORD_WEBHOOK }}"
+          message: "Pull Request on **${repository.owner.name}/${repository.name}**. From `${pull_request.head.ref}` to `${pull_request.base.ref}`"
+          embed: '{ "title": "${ pull_request.title }", "description": "${ pull_request.body }", "url": "${ pull_request.html_url }", "author": { "name": "${ pull_request.user.login }", "icon_url": "${pull_request.user.avatar_url}"} }'

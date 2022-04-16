@@ -1,0 +1,23 @@
+{
+  "repository": {
+    "name": "discord-action-embed",
+    "owner": {
+      "name": "rguillaume"
+    }
+  },
+  "pull_request": {
+    "title": "Best PullRequest Ever",
+    "body": "With the best description",
+    "html_url": "https://github.com/rguillaume/pull-requests/01",
+    "user": {
+      "login": "rguillaume",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2625046?v=4"
+    },
+    "head": {
+      "ref": "sample-head-ref"
+    },
+    "base": {
+      "ref": "sample-base-ref"
+    }
+  }
+}

@@ -19,6 +19,8 @@
   "homepage": "https://github.com/rguillaume/discord-action-embed#readme",
   "dependencies": {
     "@actions/core": "^1.6.0",
-    "axios": "^0.26.1"
+    "@actions/github": "^5.0.1",
+    "axios": "^0.26.1",
+    "lodash.template": "^4.5.0"
   }
 }
