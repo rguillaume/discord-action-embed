@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: discord
-      uses: sebastianpopp/discord-action@releases/v1
+      uses: rguillaume/discord-action-embed@v1.0.2
       with:
         webhook: ${{ secrets.DISCORD_WEBHOOK }}
         message: "Pull Request on **${repository.owner.name}/${repository.name}**. From `${pull_request.head.ref}` to `${pull_request.base.ref}`"
