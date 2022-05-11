@@ -10,8 +10,6 @@ try {
 
   const githubPayload = github.context.payload;
 
-  core.info("payload: " + JSON.stringify(githubPayload));
-
   const content = template(message)(githubPayload);
   const embedJson = JSON.parse(template(embed)(githubPayload));
 
@@ -33,6 +31,6 @@ try {
     core.info("Message was sent successfully");
   });
 } catch (error) {
-  // core.setFailed(error.message);
-  core.info("Message failed");
+  core.setFailed(error.message);
+  // core.info("Message failed");
 }
