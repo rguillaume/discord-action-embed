@@ -16,6 +16,6 @@ jobs:
       - name: Discord PR
         uses: ./
         with:
-          webhook: "https://discord.com/api/webhooks/964705578800803850/igI6Pivzqr7pOuHUVp-_aSbY5zi_BGHeMejHiP-TIJCG3VI-Qkw1kZ6YS0_OlGqSmHFi"
+          webhook:  ""${{ secrets.DISCORD_WEBHOOK }}"
           message: "Pull Request on **${repository.owner.name}/${repository.name}**. From `${pull_request.head.ref}` to `${pull_request.base.ref}`"
           embed: '{ "title": "${ pull_request.title }", "description": "${ pull_request.body }", "url": "${ pull_request.html_url }", "author": { "name": "${ pull_request.user.login }", "icon_url": "${pull_request.user.avatar_url}"} }'
