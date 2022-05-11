@@ -1,6 +1,6 @@
 {
   "name": "discord-action-embed",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Send a message to a Discord webhook.",
   "main": "index.js",
   "scripts": {
