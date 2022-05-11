@@ -11,11 +11,13 @@ try {
   const githubPayload = github.context.payload;
 
   const content = template(message)(githubPayload);
-  const embedJson = JSON.parse(template(embed)(githubPayload));
+  const embedJson = !!embed
+    ? JSON.parse(template(embed)(githubPayload))
+    : undefined;
 
   const data = {
     content,
-    embeds: [embedJson],
+    embeds: !!embed ? [embedJson] : [],
   };
 
   const options = {
