@@ -1,0 +1,13 @@
+npm-debug.*
+.DS_Store
+web-build
+node_modules
+.vercel
+.env
+.watchmanconfig
+
+# node.js
+#
+node_modules/
+npm-debug.log
+yarn-error.log

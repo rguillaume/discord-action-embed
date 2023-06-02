@@ -1,6 +1,6 @@
 {
   "name": "discord-action-embed",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Send a message to a Discord webhook.",
   "main": "index.js",
   "scripts": {
@@ -18,9 +18,9 @@
   },
   "homepage": "https://github.com/rguillaume/discord-action-embed#readme",
   "dependencies": {
-    "@actions/core": "^1.6.0",
-    "@actions/github": "^5.0.1",
-    "axios": "^0.26.1",
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1",
+    "axios": "^1.4.0",
     "lodash.template": "^4.5.0"
   }
 }
